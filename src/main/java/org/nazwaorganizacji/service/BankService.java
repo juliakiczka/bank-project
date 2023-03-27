@@ -18,6 +18,9 @@ public class BankService {
         return clientRepository.findByEmail(email);
     }
 
+    public void transfer(String fromEmail, String toEmail, double amount) {
+
+    }
 
 
 }
