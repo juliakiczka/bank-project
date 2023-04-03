@@ -7,6 +7,14 @@ public class Client {
     private String email;
     private double balance;
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
     public Client(String name, String email, double balance) {
         this.name = name;
         this.email = email;
