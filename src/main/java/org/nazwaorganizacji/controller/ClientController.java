@@ -3,7 +3,7 @@ package org.nazwaorganizacji.controller;
 import lombok.RequiredArgsConstructor;
 import org.nazwaorganizacji.DTO.ClientRequest;
 import org.nazwaorganizacji.DTO.ClientResponse;
-import org.nazwaorganizacji.service.BankService;
+import org.nazwaorganizacji.service.ClientService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-public class BankController {
-    private final BankService service;
+public class ClientController {
+    private final ClientService service;
 
     @GetMapping(path = "/api/user")
     public ResponseEntity<ClientResponse> findByEmail(@RequestParam String email) {
